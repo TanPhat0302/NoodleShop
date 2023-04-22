@@ -1,0 +1,17 @@
+﻿@page
+@model BookApplication.Pages.Checkout.CheckoutModel
+@{
+}
+<h1>YourOrder</h1>
+@{
+    var ImagePath = "~/images/Pho/" + (Model.ImageTitle + ".jpg");
+}
+<div class="align-content-center">
+    <div class="col-3 mx-auto mb-5">
+        <img src="@ImagePath" class="w-100" asp-append-version="true" />
+        <p>Your order for the @Model.PhoName Noodle is ready!</p>
+        <P>Total price for your order is: @Model.PhoPrice $</P>
+        </br>
+        <a class="btn alert-primary mt-1 mx-auto" asp-area ="" asp-page="ThankYou">Confirm Your Order</a>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+﻿@page
+@model BookApplication.Pages.Forms.CustomPhoModel
+@{
+}
+<div class="text-center container">
+    <h1>Create your own noodle!</h1>
+    <form method="post" class="mx-auto mt-5 mb-5 px-5 pt-5 rounded-5 alert-light col-4">
+        <input type="text" asp-for="Pho.PhoName" placeholder="Give name for your order.."/>
+        <br>
+        <input type="checkbox" asp-for="Pho.HotSauce" placeholder="Hot Sauce" /> Hot Sauce
+        <br>
+        <input type="checkbox" asp-for="Pho.Hoisin" placeholder="Hoisin" /> Hoisin
+        <br>
+        <input type="checkbox" asp-for="Pho.Onion" placeholder="Onion" /> Onion
+        <br>
+        <input type="checkbox" asp-for="Pho.Pepper" placeholder="Pepper" /> Pepper
+        <br>
+        <button class="btn btn-primary mt-1" type="submit">Order my Noodle</button>
+    </form>
+</div>
